@@ -43,6 +43,8 @@ APK output:
 
 Every push to `main` builds a debug APK. Open **Actions → Build Phase 1 APK → latest run → Artifacts** and download `notification-vault-phase1-debug-apk`.
 
+The workflow installs Android SDK 35 explicitly before compiling so the hosted build does not depend on the runner image already containing the required platform.
+
 ## Enrollment flow
 
 1. Open the Notification Vault admin dashboard.
